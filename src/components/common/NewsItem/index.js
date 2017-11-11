@@ -4,9 +4,9 @@ import styles from "./styles";
 class NewsItem extends Component {
     render() {
         return (
-        <div style={styles.columnContainer}>
+        <div style={styles.gridContainer}>
             <div style={styles.leftColumn}>
-                <img src={this.props.item.videoThumb} />
+                <img src={this.props.item.videoThumb} style={styles.thumb}/>
             </div>
             <div style={styles.rightColumn}>
                 <h4 style={styles.subtitle}>News Release</h4>

@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import TitleSample from "./components/TitleSample";
+import NewsList from "./components/NewsList";
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <TitleSample />
+      <header>
+      <h1>Recent News Releases</h1>
+      </header>
+      <content>
+        <NewsList />
+      </content>
+      <footer>
+
+      </footer>
       </div>
     );
   }
