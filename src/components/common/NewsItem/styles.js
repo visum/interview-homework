@@ -19,7 +19,8 @@ export default {
     thumb: {
         width: "180px",
         border: "1px solid black",
-        margin: "0 auto"
+        margin: "0 auto",
+        cursor: "pointer"
     },
     subtitle: {
         margin: "0",
@@ -31,7 +32,8 @@ export default {
         margin: "0",
         padding: "0 0 12px 0",
         color: "#757575",
-        fontWeight: "lighter"
+        fontWeight: "lighter",
+        cursor: "pointer"
     },
     teaser: {
         margin: "0",

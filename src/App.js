@@ -10,7 +10,7 @@ class App extends Component {
       <h1>Recent News Releases</h1>
       </header>
       <content>
-        <NewsList />
+        <NewsList style={{position:"relative"}} />
       </content>
       <footer>
 
