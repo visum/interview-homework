@@ -32,7 +32,7 @@ class Gallery extends Component {
                 <img 
                     style={styles.mainImage} 
                     alt={this.state.selectedImage.caption}
-                    src={`images/full/${this.state.selectedImage.image}`}
+                    src={`/images/full/${this.state.selectedImage.image}`}
                 />
                 <div style={styles.thumbnailBar}>
                     <div style={styles.thumbnailBarLeft}>

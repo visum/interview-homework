@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import styles from "./styles";
 import Gallery from "../common/Gallery";
 import SmallVideo from "../common/SmallVideo";
+import articleData from "../../data/article";
 
 let contentTypeHandlers = {
     "p":(item, index) => {
@@ -22,22 +23,26 @@ let contentTypeHandlers = {
 };
 
 class Article extends Component {
-
-    
+    constructor(props) {
+        super(props);
+        this.state = {
+            content: articleData
+        };
+    }
 
     render() {
 
-        let contents = this.props.content.content.map((item, index) => {
+        let contents = this.state.content.content.map((item, index) => {
             return contentTypeHandlers[item.type](item, index);
         });
 
         return (
         <article style={styles.wrapper}>
             <h4 style={styles.subtitle}>News Release</h4>
-            <h1 style={styles.title}>{this.props.content.title}</h1>
+            <h1 style={styles.title}>{this.state.content.title}</h1>
             <Gallery 
                 style={styles.gallery}
-                images={this.props.content.gallery}
+                images={this.state.content.gallery}
             />
             {contents}
         </article>

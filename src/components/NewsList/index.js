@@ -8,7 +8,7 @@ class NewsList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedItem: newsItems[0]
+            selectedItem: null
         }        
     }
 
@@ -31,18 +31,20 @@ class NewsList extends Component {
         const newsDetailStatus = this.state.selectedItem ? "newsDetailShowing" : "newsDetailHidden"
 
         return (
-        <section>
-            <div style={styles[newsDetailStatus]}>
-                <NewsDetail 
-                    item={this.state.selectedItem}
-                    onClose={() => {this.handleClose();}}
-                />
-            </div>
-            
-            <ul>
-                {items}
-            </ul>
-        </section>
+            <section>
+                <h1 style={styles.title}>Recent Stories</h1>
+                <section style={styles[newsDetailStatus]}>
+                    <NewsDetail 
+                        item={this.state.selectedItem}
+                        onClose={() => {this.handleClose();}}
+                    />
+                </section>
+                <section>
+                <ul>
+                    {items}
+                </ul>
+                </section>
+            </section>
         );
     }
 }

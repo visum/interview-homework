@@ -6,7 +6,7 @@ class TinyThumb extends Component {
         return (
         <img 
             style={styles.wrapper}
-            src={`images/thumb_small/${this.props.image.image}`}
+            src={`/images/thumb_small/${this.props.image.image}`}
             alt={this.props.image.caption}
             onClick={() => {this.props.onClick(this.props.image)}}
         />);

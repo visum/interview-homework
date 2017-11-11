@@ -8,13 +8,14 @@ export default {
         bottom: "0",
         backgroundColor: "rgba(255,255,255,0.8)"
     },
-    container: {
+    wrapper: {
         maxWidth: "600px",
         margin: "0 auto",
         padding: "40px 30px",
         border: "1px solid rgba(206,206,206,1.0)",
         backgroundColor: "rgba(255,255,255,1.0)",
-        position: "relative"
+        position: "relative",
+        fontSize: "0.9em"
     },
     video: {
         maxWidth: "600px"
@@ -48,5 +49,8 @@ export default {
     },
     closeButtonIcon: {
         width: "25px"
+    },
+    readMore: {
+        textAlign: "right"
     }
 }

@@ -1,5 +1,8 @@
 //NewsList/styles.js
 export default {
+    title: {
+        fontWeight: "lighter"
+    },
     newsDetailShowing: {
         position: "absolute",
         top: "0",
