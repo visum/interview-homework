@@ -18,6 +18,7 @@ export default {
         fontSize: "0.9em"
     },
     video: {
+        width: "100%",
         maxWidth: "600px"
     },
     subtitle: {

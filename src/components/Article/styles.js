@@ -13,7 +13,8 @@ export default {
         fontSize: "2em"
     },
     wrapper: {
-        maxWidth: "600px"
+        maxWidth: "600px",
+        padding: "8px"
     },
     gallery: {
 

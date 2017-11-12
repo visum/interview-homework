@@ -1,20 +1,29 @@
 // NewsItem/styles.js
 export default {
-    gridContainer: {
+    normalContainer: {
         display: "grid",
         gridTemplateColumns: "repeat(3,1fr)",
         gridAutoRows:"minmax(150px, auto)",
         gridGap:"10px",
         padding:"0 0 20px 0"
     },
-    leftColumn: {
+    normalLeft: {
         gridColumn: "1 / 2",
         gridRow: "1",
         textAlign: "center"
     },
-    rightColumn: {
+    normalRight: {
         gridColumn: "2 / 4",
         gridRow: "1"
+    },
+    mobileContainer: {
+        padding: "8px"
+    },
+    mobileLeft: {
+        textAlign: "center"
+    },
+    mobileRight: {
+
     },
     thumb: {
         width: "180px",

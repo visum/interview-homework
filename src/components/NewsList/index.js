@@ -25,7 +25,9 @@ class NewsList extends Component {
             return <NewsItem 
                     key={item.id}
                     item={item}
-                    onSelect={(item) => {this.handleSelect(item);}}/>
+                    onSelect={(item) => {this.handleSelect(item);}}
+                    inMobile={this.props.inMobile}
+                />
         });
 
         const newsDetailStatus = this.state.selectedItem ? "newsDetailShowing" : "newsDetailHidden"
