@@ -18,10 +18,3 @@ class SmallVideo extends Component {
 }
 
 export default SmallVideo;
-
-/*
-          type:"Video",
-            src:"photo07.jpg",
-            title:"Great Flick",
-            caption:"the video is superlative"
-*/

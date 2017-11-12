@@ -1,7 +1,13 @@
 // Gallery/styles.js
 export default {
-    wrapper: {
-        width: "100%",
+    imageTitle: {
+        fontSize: "0.8em",
+        color: "#757575"
+    },
+    imageCaption: {
+        fontSize: "0.6em",
+        color: "#757575",
+        fontWeight: "lighter"
     },
     mainImage: {
         maxWidth: "100%",
@@ -21,13 +27,7 @@ export default {
         gridRow: "1",
         textAlign: "right"
     },
-    imageTitle: {
-        fontSize: "0.8em",
-        color: "#757575"
+    wrapper: {
+        width: "100%",
     },
-    imageCaption: {
-        fontSize: "0.6em",
-        color: "#757575",
-        fontWeight: "lighter"
-    }
 }

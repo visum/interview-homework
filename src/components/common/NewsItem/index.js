@@ -23,20 +23,21 @@ class NewsItem extends Component {
         };
 
         return (
-        <div style={styles[responsiveStyles[responsiveState]["container"]]}>
-            <div style={styles[responsiveStyles[responsiveState]["left"]]}>
-                <img 
-                    src={this.props.item.videoThumb}
-                    style={styles.thumb}
-                    onClick={() => {this.clickHandler();}}
-                />
+            <div style={styles[responsiveStyles[responsiveState]["container"]]}>
+                <div style={styles[responsiveStyles[responsiveState]["left"]]}>
+                    <img 
+                        src={this.props.item.videoThumb}
+                        style={styles.thumb}
+                        onClick={() => {this.clickHandler();}}
+                        alt={this.props.item.title}
+                    />
+                </div>
+                <div style={styles[responsiveStyles[responsiveState]["right"]]}>
+                    <h4 style={styles.subtitle}>News Release</h4>
+                    <h2 style={styles.itemTitle} onClick={() => {this.clickHandler();}}>{this.props.item.title}</h2>
+                    <p style={styles.teaser}>{this.props.item.teaser}</p>
+                </div>
             </div>
-            <div style={styles[responsiveStyles[responsiveState]["right"]]}>
-                <h4 style={styles.subtitle}>News Release</h4>
-                <h2 style={styles.itemTitle} onClick={() => {this.clickHandler();}}>{this.props.item.title}</h2>
-                <p style={styles.teaser}>{this.props.item.teaser}</p>
-            </div>
-        </div>
         );
     }
 }

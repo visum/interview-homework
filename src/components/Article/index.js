@@ -18,7 +18,7 @@ let contentTypeHandlers = {
             </div>);
     },
     "h2":(item, index) => {
-        return <h2 style={styles.h2} key={index}>{item.value}</h2>
+        return <h2 style={styles.h2} key={index}>{item.value}</h2>;
     }
 };
 
@@ -40,10 +40,7 @@ class Article extends Component {
         <article style={styles.wrapper}>
             <h4 style={styles.subtitle}>News Release</h4>
             <h1 style={styles.title}>{this.state.content.title}</h1>
-            <Gallery 
-                style={styles.gallery}
-                images={this.state.content.gallery}
-            />
+            <Gallery images={this.state.content.gallery} />
             {contents}
         </article>
         );

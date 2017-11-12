@@ -12,18 +12,18 @@ class NewsDetail extends Component {
         }
 
         return (
-        <div style={styles.veil}>
-            <div style={styles.wrapper}>
-                <button style={styles.closeButton} onClick={this.props.onClose}>
-                    <img src="images/icons/close.svg" alt="close" style={styles.closeButtonIcon}/>
-                </button>
-                <img src={item.video} style={styles.video} />
-                <h4 style={styles.subtitle}>News Release</h4>
-                <h2 style={styles.title}>{item.title}</h2>
-                <p style={styles.teaser}>{item.teaser}</p>
-                <div style={styles.readMore}><Link to={`/article/${item.id}`}>Read more...</Link></div>
+            <div style={styles.veil}>
+                <div style={styles.wrapper}>
+                    <button style={styles.closeButton} onClick={this.props.onClose}>
+                        <img src="images/icons/close.svg" alt="close" style={styles.closeButtonIcon}/>
+                    </button>
+                    <img src={item.video} style={styles.video} alt={item.title}/>
+                    <h4 style={styles.subtitle}>News Release</h4>
+                    <h2 style={styles.title}>{item.title}</h2>
+                    <p style={styles.teaser}>{item.teaser}</p>
+                    <div style={styles.readMore}><Link to={`/article/${item.id}`}>Read more...</Link></div>
+                </div>
             </div>
-        </div>
         );
     }
 }

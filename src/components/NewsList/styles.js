@@ -1,7 +1,7 @@
 //NewsList/styles.js
 export default {
-    title: {
-        fontWeight: "lighter"
+    newsDetailHidden: {
+        display: "none"
     },
     newsDetailShowing: {
         position: "fixed",
@@ -10,7 +10,7 @@ export default {
         width: "100%",
         height: "100%"
     },
-    newsDetailHidden: {
-        display: "none"
+    title: {
+        fontWeight: "lighter"
     }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import NewsList from "./components/NewsList";
 import Article from "./components/Article";
-import articleData from "./data/article";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import enquire from "enquire.js";
 import "./App.css";

@@ -20,11 +20,13 @@ class Gallery extends Component {
         const thumbs = this.props.images.filter((image) => {
             return image !== this.state.selectedImage;
         }).map((image) => {
-            return (<TinyThumb 
-                        image={image}
-                        key={image.key}
-                        onClick={(image) => {this.handleImageChange(image);}}
-                    />);
+            return (
+                <TinyThumb 
+                    image={image}
+                    key={image.key}
+                    onClick={(image) => {this.handleImageChange(image);}}
+                />
+            );
         });
 
         return (
